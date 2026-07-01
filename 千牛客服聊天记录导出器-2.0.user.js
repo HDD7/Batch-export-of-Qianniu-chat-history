@@ -6,6 +6,7 @@
 // @author       HHD7
 // @match        *://myseller.taobao.com/*
 // @match        *://qianniu.taobao.com/*
+// @include      *://.taobao.com/*
 // @grant        none
 // @require      https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js
 // ==/UserScript==
@@ -57,11 +58,12 @@
         });
     }
 
-    // 插入按钮到 message-list 上方
+    // 插入按钮到 导航条
     function addButtonToPage() {
-        const msgList = document.querySelector('.message-list');
+        const msgList = document.querySelector('.tbd-tabs-nav-list');
         if (!msgList) {
-            setTimeout(addButtonToPage, 1000);
+            setTimeout(addButtonToPage, 1500);
+            console.log('error no nav-list')
             return;
         }
 
