@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         千牛客服聊天记录导出器
 // @namespace    http://tampermonkey.net/
-// @version      2.0
+// @version      2.1
 // @description  自动导出千牛客服聊天记录为Json并打包ZIP
 // @author       HHD7
 // @match        *://myseller.taobao.com/*
